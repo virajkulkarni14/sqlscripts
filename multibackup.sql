@@ -12,7 +12,7 @@ DECLARE @fileName VARCHAR(256) -- filename for backup
 DECLARE @fileDate VARCHAR(20) -- used for file name
 
 -- specify database backup directory
-SET @path = 'E:\\Sovit\_BackupFolder\'
+SET @path = '/path/to/your/backup/directory'
 exec master.dbo.xp_create_subdir @path
 
 -- specify filename format
